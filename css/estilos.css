@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Sofia&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: #09097a;
+}
+
+.logo{
+    width: 200px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header a{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: beige;
+    font-size: 20px;
+}
+
+header a:hover{
+    color: red;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    color: antiquewhite;
+}
+
+
+
+section,main{
+    width: 100%;
+    min-height: 100vh;
+}
+div.subtitulo{
+    color: white;
+    position: relative;
+    top: 60px;
+    width: 20%;
+    padding: 10px;
+    margin: 10px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.contenedor_figuritas{
+    top: 200px;
+    position: relative;
+}
+.imagenAlbum{
+    width: 30%;
+}
+.flex {
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contenedor_mangas{
+    top: 60px;
+    position: relative;
+}
+
+.contenedor_mangas > div{
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid;
+}
+
+.contenedor_comics{
+    top: 60px;
+    position: relative;
+}
+
+/*Estilos contacto*/
+
+.contenedor-contacto{
+    margin: 50px auto;
+    max-width: 500px;
+    padding: 40px;
+    background:#2c2cb9;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.contenedor-contacto h5{
+    margin: 0 0 30px;
+    padding: 0;
+    font-size: 20px;
+    color:white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contenedor-contacto .elemento label{
+    color: #fff;
+}
+.contenedor-contacto .elemento input{
+    width: 100%;
+    padding: 10px 0;
+    color: #fff;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 30px;
+}
+
+.contenedor-contacto .elemento input[type="submit"]{
+    background-color: #355fb9;
+    border: none;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.contenedor-contacto .elemento input[type="submit"]:hover{
+    background-color: #3b6cd4;
+    text-decoration: underline;
+}
