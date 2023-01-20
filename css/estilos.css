@@ -61,22 +61,42 @@ section,main{
 div.subtitulo{
     color: white;
     position: relative;
-    top: 60px;
-    width: 20%;
+    top: 10px;
+    width: auto;
     padding: 10px;
-    margin: 10px;
+    margin-bottom: 20px;
     background-color: blueviolet;
     border-radius: 10px;
     text-align: center;
 }
 
 
-.contenedor_figuritas{
-    top: 200px;
-    position: relative;
+.contenedor_inicio .elemento{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
+
 .imagenAlbum{
-    width: 30%;
+    width: 50%;
+    padding: 15px;
+}
+
+div.contenedorCampeones{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border: 3px solid #a8dadc;
+    padding: 15px;
+    color: #457b9d;
+    text-align: center;
+}
+.imgCampeones{
+    opacity: 0.01;
+}
+.imgCampeones:hover{
+    opacity: 1.0;
 }
 .flex {
     display: flex;
@@ -97,8 +117,8 @@ div.subtitulo{
 }
 
 .contenedor_comics{
-    top: 60px;
-    position: relative;
+    top: 20vh;
+    position:relative;
 }
 
 /*Estilos contacto*/
