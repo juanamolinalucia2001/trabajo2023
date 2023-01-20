@@ -6,8 +6,11 @@
     margin: 0;
     padding: 0;
     font-family: 'Nunito', sans-serif;
+    overflow:visible;
 }
-
+body{
+    overflow: scroll;
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -167,4 +170,10 @@ div.contenedorCampeones{
 .contenedor-contacto .elemento input[type="submit"]:hover{
     background-color: #3b6cd4;
     text-decoration: underline;
+}
+
+@media (max-width: 1500px) {
+    .imagenComic{
+        display: none;
+    }
 }

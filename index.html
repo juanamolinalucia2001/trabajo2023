@@ -91,6 +91,14 @@
                 <img src="https://figuritasqatar.com.ar/wp-content/uploads/escudo-argentina-231x300.png" alt="imagen producto">
                 <p>Escudo Argentina</p>
             </div>
+            <div>
+                <img src="https://figuritasqatar.com.ar/wp-content/uploads/lionel-messi-231x300.png" alt="imagen producto">
+                <p>Lionel Messi</p>
+            </div>
+            <div>
+                <img src="https://figuritasqatar.com.ar/wp-content/uploads/angel-di-maria-231x300.png" alt="imagen producto">
+                <p>Angel Di Maria</p>
+            </div>
             
         </div>
 
@@ -100,42 +108,40 @@
             <h2>Mangas</h2>
         </div>
         <div class="contenedor_mangas flex">
-            <div>
+            <div class="card">
                 <img src="img/naruto.jpg" alt="imagen producto">
                 <p>Naruto vol.02</p>
             </div>
-            <div>
+            <div class="card">
+                <img src="https://i.pinimg.com/236x/23/4d/1e/234d1e360bcaf5f861b55773a5cef279.jpg" alt="imagen producto">
+                <p>Naruto vol.02</p>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/236x/ef/fd/55/effd55a1d769ecc442987d6e8d0582d2--rob-liefeld-todd-mcfarlane.jpg" alt="imagen producto">
+                <p>Naruto vol.02</p>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/236x/6c/be/f3/6cbef3491cb934265f2f24eef6400c96.jpg" alt="imagen producto">
+                <p>Naruto vol.02</p>
+            </div>
+            <div class="card">
                 <img src="img/naruto.jpg" alt="imagen producto">
                 <p>Naruto vol.02</p>
             </div>
-            <div>
-                <img src="img/naruto.jpg" alt="imagen producto">
+            <div class="card">
+                <img src="https://i.pinimg.com/236x/23/4d/1e/234d1e360bcaf5f861b55773a5cef279.jpg" alt="imagen producto">
                 <p>Naruto vol.02</p>
             </div>
-            <div>
-                <img src="img/naruto.jpg" alt="imagen producto">
+            <div class="card">
+                <img src="https://i.pinimg.com/236x/ef/fd/55/effd55a1d769ecc442987d6e8d0582d2--rob-liefeld-todd-mcfarlane.jpg" alt="imagen producto">
                 <p>Naruto vol.02</p>
             </div>
-            <div>
-                <img src="img/naruto.jpg" alt="imagen producto">
+            <div class="card">
+                <img src="https://i.pinimg.com/236x/6c/be/f3/6cbef3491cb934265f2f24eef6400c96.jpg" alt="imagen producto">
                 <p>Naruto vol.02</p>
             </div>
-            <div>
-                <img src="img/naruto.jpg" alt="imagen producto">
-                <p>Naruto vol.02</p>
-            </div>
-            <div>
-                <img src="img/naruto.jpg" alt="imagen producto">
-                <p>Naruto vol.02</p>
-            </div>
-            <div>
-                <img src="img/naruto.jpg" alt="imagen producto">
-                <p>Naruto vol.02</p>
-            </div>
-            <div>
-                <img src="img/naruto.jpg" alt="imagen producto">
-                <p>Naruto vol.02</p>
-            </div>
+          
+            
     </section>
 
     <section id="comics">
@@ -179,15 +185,28 @@
             justify-content: center;
             padding: 40px;
         }
-        .informacionComic >p{
-            font-size: 16px;
-
-        }
         .imagenComic{
             position: absolute;
             top: -30px;
             left: 100px;
             z-index: 40;
+        }
+
+        .card{
+            box-shadow: 0px 5px 5px black;
+            border-radius: 15px;
+            margin: 50px;
+            padding: 50px;
+        }
+        .card img{
+            padding: 15px;
+        }
+        .card:hover{
+            transform: translateY(5px);
+        }
+        .card >p{
+            font-size: 20px;
+
         }
     </style>
 </body>
