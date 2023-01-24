@@ -142,11 +142,13 @@ div.contenedorCampeones{
     color: white;
 }
 .texto{
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     padding: 40px;
+    float: right;
 }
 .imagenComic{
     position: absolute;
@@ -223,7 +225,10 @@ div.contenedorCampeones{
 footer{
     background-color: #141453;
 }
-@media (max-width: 1500px) {
+@media (max-width: 800px) {
+    .texto{
+        width: 100%;
+    }
     .imagenComic{
         display: none;
     }
