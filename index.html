@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <img class="logo" src="img/Logo_panini.png" alt="">
+        <a href="https://es.wikipedia.org/wiki/Editorial_Panini"><img class="logo" src="img/Logo_panini.png" alt=""></a>
         <nav>
             <ul class="nav_links">
                 <li> <a href="index.html">Inicio</a></li>
@@ -165,7 +165,7 @@
                     entero está en juego! Este capítulo final llega de la mano de Donal Mustard (Director Creativo de Fornite),
                     Christos Gage y los dibujos  de Sergio Dávila.
                 </p>
-                <button>Comprar</button>
+                <button onclick="alerta()" class="btn">Comprar</button>
                 </div>
                 
                 
@@ -197,6 +197,11 @@
             </form>
         </div>
     </footer>
+    <script>
+        function alerta(){
+            alert("Producto agregado");
+        }
+    </script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
