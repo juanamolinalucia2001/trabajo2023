@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Nunito', sans-serif;
-    overflow:visible;
+
 }
 body{
     overflow: scroll;
@@ -37,40 +37,51 @@ header{
 header a{
     transition: all 0.3s ease 0s;
     text-decoration: none;
-    color: beige;
+    color:white;
     font-size: 20px;
 }
 
 header a:hover{
-    color: red;
+    color: rgb(241, 7, 7);
+    letter-spacing: 2px;
 }
 
 button{
     padding: 9px 25px;
-    background-color: rgba(0,136,169,1);
+    background-color:red;
     border: none;
-    border-radius: 50px;
+    border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    color: antiquewhite;
+    color: white;
+}
+
+.icono{
+    width: 500px;
 }
 
 
 
-section,main{
+section,main,footer{
     width: 100%;
     min-height: 100vh;
+    top: 50px;
 }
 div.subtitulo{
     color: white;
-    position: relative;
-    top: 10px;
     width: auto;
     padding: 10px;
     margin-bottom: 20px;
     background-color: blueviolet;
     border-radius: 10px;
     text-align: center;
+/*     position:relative;
+    width: auto;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    text-align: center; */
 }
 
 
@@ -109,8 +120,7 @@ div.contenedorCampeones{
 }
 
 .contenedor_mangas{
-    top: 60px;
-    position: relative;
+    margin: 30px 0px;
 }
 
 .contenedor_mangas > div{
@@ -124,13 +134,51 @@ div.contenedorCampeones{
     position:relative;
 }
 
+.informacionComic{
+    background-color: red;
+    width: 100%;
+    position: static;
+    z-index: 20;
+    color: white;
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+.imagenComic{
+    position: absolute;
+    top: -30px;
+    left: 100px;
+    z-index: 40;
+}
+
+.card{
+    box-shadow: 0px 5px 5px black;
+    border-radius: 15px;
+    margin: 50px;
+    padding: 50px;
+}
+.card img{
+    padding: 15px;
+}
+.card:hover{
+    transform: translateY(5px);
+}
+.card >p{
+    font-size: 20px;
+
+}
+
 /*Estilos contacto*/
 
 .contenedor-contacto{
     margin: 50px auto;
     max-width: 500px;
     padding: 40px;
-    background:#2c2cb9;
+    background:red;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -158,7 +206,7 @@ div.contenedorCampeones{
 }
 
 .contenedor-contacto .elemento input[type="submit"]{
-    background-color: #355fb9;
+    background-color: #09097a;
     border: none;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -168,10 +216,13 @@ div.contenedorCampeones{
 }
 
 .contenedor-contacto .elemento input[type="submit"]:hover{
-    background-color: #3b6cd4;
-    text-decoration: underline;
+    background-color: #242481;
+    letter-spacing: 5px;
 }
 
+footer{
+    background-color: #141453;
+}
 @media (max-width: 1500px) {
     .imagenComic{
         display: none;

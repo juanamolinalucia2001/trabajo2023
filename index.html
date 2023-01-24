@@ -16,8 +16,8 @@
                 <li><a href="#figuritas">Figuritas</a></li>
                 <li><a href="#mangas">Mangas</a></li>
                 <li><a href="#comics">Comics</a></li>
-                <li><a href="contacto.html">Suscribite</a></li>
-                <li> <a href="mailto:jmolina@digicard.net?subject=Contacto&body=Estoy interesado en el producto...."><button>Contacto</button></a></li>
+                <li><a href="#novedades">Suscribite</a></li>
+                <li> <a href="mailto:jmolina@digicard.net?subject=Contacto&body=Estoy interesado en el producto...."><button><ion-icon name="mail-sharp"></ion-icon></button></a></li>
             </ul>
         </nav>
     </header>
@@ -99,12 +99,20 @@
                 <img src="https://figuritasqatar.com.ar/wp-content/uploads/angel-di-maria-231x300.png" alt="imagen producto">
                 <p>Angel Di Maria</p>
             </div>
+            <div>
+                <img src="https://figuritasqatar.com.ar/wp-content/uploads/lionel-messi-231x300.png" alt="imagen producto">
+                <p>Lionel Messi</p>
+            </div>
+            <div>
+                <img src="https://figuritasqatar.com.ar/wp-content/uploads/angel-di-maria-231x300.png" alt="imagen producto">
+                <p>Angel Di Maria</p>
+            </div>
             
         </div>
 
     </section>
     <section id="mangas">
-        <div class="subtitulo">
+        <div class="subtitulo flex">
             <h2>Mangas</h2>
         </div>
         <div class="contenedor_mangas flex">
@@ -140,7 +148,14 @@
                 <img src="https://i.pinimg.com/236x/6c/be/f3/6cbef3491cb934265f2f24eef6400c96.jpg" alt="imagen producto">
                 <p>Naruto vol.02</p>
             </div>
-          
+            <div class="card">
+                <img src="https://i.pinimg.com/236x/ef/fd/55/effd55a1d769ecc442987d6e8d0582d2--rob-liefeld-todd-mcfarlane.jpg" alt="imagen producto">
+                <p>Naruto vol.02</p>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/236x/6c/be/f3/6cbef3491cb934265f2f24eef6400c96.jpg" alt="imagen producto">
+                <p>Naruto vol.02</p>
+            </div>
             
     </section>
 
@@ -170,44 +185,29 @@
             </div>
         </div>
     </section>
-    <style>
-        .informacionComic{
-            background-color: red;
-            width: 100%;
-            position: static;
-            z-index: 20;
-            color: white;
-        }
-        .texto{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 40px;
-        }
-        .imagenComic{
-            position: absolute;
-            top: -30px;
-            left: 100px;
-            z-index: 40;
-        }
-
-        .card{
-            box-shadow: 0px 5px 5px black;
-            border-radius: 15px;
-            margin: 50px;
-            padding: 50px;
-        }
-        .card img{
-            padding: 15px;
-        }
-        .card:hover{
-            transform: translateY(5px);
-        }
-        .card >p{
-            font-size: 20px;
-
-        }
-    </style>
+    <footer id="novedades" class="flex">
+        <div class="contenedor-contacto">
+            <h5>Recibe novedades de la tienda Panini</h5>
+            <form method="get">
+                <div class="elemento">
+                    <label for="nombreCompleto">Nombre completo</label>
+                    <input type="text" name="nombreCompleto" id="nombreCompleto" placeholder="Ingresa tu nombre completo">
+                </div>
+                <div class="elemento">
+                    <label for="nacimiento">Cumpleaños</label>
+                    <input type="date" name="nacimiento" id="nacimiento">
+                </div>
+                <div class="elemento">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" name="email" id="email" placeholder="Ingresa tu correo">
+                </div>
+                <div class="elemento">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </footer>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
