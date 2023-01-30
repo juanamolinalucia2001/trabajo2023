@@ -9,8 +9,10 @@
 
 }
 body{
-    overflow: scroll;
-    min-width: 100%;
+    overflow-y: scroll;
+    overflow-y: none;
+    width:  100%;
+    height: 100%;
 }
 header{
     display: flex;
@@ -18,8 +20,10 @@ header{
     align-items: center;
     padding: 10px 5%;
     background-color: #09097a;
-    min-width: 100vh;
+    min-width: 100%;
 }
+
+
 
 .logo{
     width: 200px;
@@ -101,8 +105,8 @@ div.subtitulo{
 }
 
 div.contenedorCampeones{
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
     margin: auto;
     border: 3px solid #a8dadc;
     padding: 15px;
@@ -110,17 +114,25 @@ div.contenedorCampeones{
     text-align: center;
 }
 .imgCampeones{
+    width: 90%;
+    height: 90%;
     opacity: 0.01;
 }
 .imgCampeones:hover{
     opacity: 1.0;
 }
+
+main h2{
+    font-size: 2.5vh;
+}
+
 .flex {
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
     align-items: center;
-    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
 }
 
 .contenedor_mangas{
