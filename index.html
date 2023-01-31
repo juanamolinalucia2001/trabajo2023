@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <header>
-        <a href="https://es.wikipedia.org/wiki/Editorial_Panini"><img class="logo" src="img/Logo_panini.png" alt=""></a>
+
+    <header class="header">
+        <a href="https://es.wikipedia.org/wiki/Editorial_Panini"  ><img src="img/Logo_panini.png" alt="" class="logo"></a>
         <nav>
             <ul class="nav_links">
                 <li> <a href="index.html">Inicio</a></li>
@@ -21,9 +22,11 @@
             </ul>
         </nav>
     </header>
-    <main id="Inicio">
+
+
+    <main id="Inicio" >
         <div class="subtitulo">
-            <h2>Álbum FIFA WC QATAR 2022</h2>
+            <h2 >Álbum FIFA WC QATAR 2022</h2>
         </div>
         <div class="contenedor_inicio flex">
             <div class="elemento">
@@ -34,11 +37,11 @@
             </div>
             <div class="elemento">
                 <img src="img/imagenAlbum.png" alt="imagen album" class="imagenAlbum">
-                <iframe width="800" height="400" src="https://www.youtube.com/embed/RqXthasKblE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="400" height="400"  src="https://www.youtube.com/embed/RqXthasKblE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
     </main>
-    <section id="figuritas">
+    <section id="figuritas" class="figuritas">
         <div class="subtitulo">
             <h2>Figuritas</h2>
         </div>
@@ -108,7 +111,7 @@
         </div>
 
     </section>
-    <section id="mangas">
+    <section id="mangas" class="mangas">
         <div class="subtitulo flex">
             <h2>Mangas</h2>
         </div>
@@ -149,7 +152,7 @@
             
     </section>
 
-    <section id="comics">
+    <section id="comics" class="comics">
         <div class="subtitulo">
             <h2>Comics</h2>
         </div>
@@ -175,7 +178,7 @@
             </div>
         </div>
     </section>
-    <footer id="novedades" class="flex">
+    <footer id="novedades" class="footer flex">
         <div class="contenedor-contacto">
             <h5>Recibe novedades de la tienda Panini</h5>
             <form method="get">
@@ -195,8 +198,8 @@
                     <input type="submit" value="Enviar">
                 </div>
             </form>
-        </div>
     </footer>
+</div>
     <script>
         function alerta(){
             alert("Producto agregado");
